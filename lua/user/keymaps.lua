@@ -71,11 +71,15 @@ keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Barbar
 -- Move to previous/next
-keymap('n', '<A-,>', ':BufferPrevious<CR>', opts)
-keymap('n', '<A-.>', ':BufferNext<CR>', opts)
+keymap("n", "<A-,>", ":BufferPrevious<CR>", opts)
+keymap("n", "<A-.>", ":BufferNext<CR>", opts)
 
 -- Close buffer
-keymap('n', '<A-c>', ':BufferClose<CR>', opts)
+keymap("n", "<A-c>", ":BufferClose<CR>", opts)
 
 -- Magic buffer-picking mode
-keymap('n', '<C-p>', ':BufferPick<CR>', opts)
+keymap("n", "<C-p>", ":BufferPick<CR>", opts)
+
+-- Nvim Tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
