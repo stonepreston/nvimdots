@@ -68,3 +68,14 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Barbar
+-- Move to previous/next
+keymap('n', '<A-,>', ':BufferPrevious<CR>', opts)
+keymap('n', '<A-.>', ':BufferNext<CR>', opts)
+
+-- Close buffer
+keymap('n', '<A-c>', ':BufferClose<CR>', opts)
+
+-- Magic buffer-picking mode
+keymap('n', '<C-p>', ':BufferPick<CR>', opts)
