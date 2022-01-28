@@ -107,9 +107,12 @@ return packer.startup(function(use)
     },
     config = function() require'nvim-tree'.setup {} end
   }
-
-  -- Automatically set up your configuration after cloning packer.nvim
+  
+  -- For markdown previews
+  use {"ellisonleao/glow.nvim"}
+-- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
